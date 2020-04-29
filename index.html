@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '396172707252895',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v2.11'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+              
 
 <h2>External JavaScript</h2>
 
@@ -9,6 +28,11 @@
 <button type="button" onclick="myFunction()">Try it</button>
 
 <p>(myFunction is stored in an external file called "myScript.js")</p>
+  <div class="fb-customerchat"
+    page_id="108617377497462"
+    minimized="false">
+</div>
+       
 
 <script src="https://www.w3schools.com/js/myScript.js"></script>
 
